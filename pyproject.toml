@@ -15,6 +15,7 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = ">=3.11,<3.12"
+fastapi = {extras = ["all"], version = "^0.101.1"}
 
 [tool.poetry.group.dev.dependencies]
 black = "^23.3.0"

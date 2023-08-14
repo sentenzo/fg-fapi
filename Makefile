@@ -1,9 +1,12 @@
-PROJECT_DIR = my_app
+PROJECT_DIR = fg_back
 
 CODE = ${PROJECT_DIR} tests
 
 run:
 	poetry run python -m ${PROJECT_DIR}
+
+run-uvicorn:
+	poetry run uvicorn ${PROJECT_DIR}.__main__:app --reload --host 0.0.0.0 --port 5000
 
 init:
 	poetry install
