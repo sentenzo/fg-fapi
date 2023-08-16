@@ -8,6 +8,9 @@ run:
 run-uvicorn:
 	poetry run uvicorn ${PROJECT_DIR}.__main__:app --reload --host 0.0.0.0 --port 5000
 
+run-docker:
+	docker compose up --build
+
 init:
 	poetry install
 

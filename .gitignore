@@ -1,5 +1,6 @@
 fg_front
 docs
+.docker_volumes
 
 __pycache__
 
